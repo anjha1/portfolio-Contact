@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e5b37a;
+            color: #333;
+        }
+
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #02008e;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .contact-item {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .contact-item img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+        }
+
+        .contact-item a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .contact-item span {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px 0;
+            width: 100%;
+        }
+
+        .contact-item:hover span {
+            background: rgb(127, 0, 0);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Info</h1>
+    </header>
+    <nav>
+        <a href="https://anjha1.github.io/portfolio-Home/">Home</a>
+        <a href="https://anjha1.github.io/portfolio-Experience/">Experience</a>
+        <a href="https://anjha1.github.io/portfolio-Projects/">Projects</a>
+    </nav>
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/achhuta-nand-jha-2b10a5248/" target="_blank">
+                    <img src="linkedin.jpg" alt="LinkedIn">
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://github.com/anjha1" target="_blank">
+                    <img src="github.png" alt="GitHub">
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://hyperskill.org/profile/612304328" target="_blank">
+                    <img src="hyperskill.jpg" alt="Hyperskill">
+                    <span>Hyperskill</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://learn.microsoft.com/en-in/users/achhutanandjha-4800/" target="_blank">
+                    <img src="microsoft-learning.jpg" alt="Microsoft Learning">
+                    <span>Microsoft Learning</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.hackerrank.com" target="_blank">
+                    <img src="hackerrank.jpg" alt="HackerRank">
+                    <span>HackerRank</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://leetcode.com/u/anjha1/" target="_blank">
+                    <img src="leetcode.jpg" alt="LeetCode">
+                    <span>LeetCode</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://codeforces.com/profile/anjha1" target="_blank">
+                    <img src="codeforces.jpg" alt="Codeforces">
+                    <span>Codeforces</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.codechef.com/users/anjha1" target="_blank">
+                    <img src="codechef.jpg" alt="CodeChef">
+                    <span>CodeChef</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://app.opengig.work/anjha1" target="_blank">
+                    <img src="opengig.jpg" alt="Open Gig">
+                    <span>Open Gig</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://medium.com/@achhutanandj" target="_blank">
+                    <img src="medium.jpg" alt="Medium">
+                    <span>Medium</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://stackoverflow.com/users/24956427/achhuta-nand-jha?tab=profile" target="_blank">
+                    <img src="stackoverflow.jpg" alt="Stack Overflow">
+                    <span>Stack Overflow</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://hashnode.com/@anjha1" target="_blank">
+                    <img src="hashnode.jpg" alt="Hashnode">
+                    <span>Hashnode</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.youth4work.com/y/anjhaa" target="_blank">
+                    <img src="youth4work.jpg" alt="Youth4work">
+                    <span>Youth4work</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Achhuta Nand Jha. All rights reserved.</p>
+    </footer>
+</body>
+</html>
