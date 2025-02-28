@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Info</title>
     <style>
-        /* Common Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -23,6 +22,7 @@
 
         header h1 {
             margin: 0;
+            font-size: 24px;
         }
 
         nav {
@@ -34,9 +34,9 @@
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 10px;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         nav a:hover {
@@ -51,8 +51,8 @@
 
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
             text-align: center;
         }
 
@@ -60,9 +60,9 @@
             background-color: #404040;
             color: #fff;
             border: none;
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
             transition: all 0.3s ease;
             text-transform: uppercase;
@@ -75,8 +75,8 @@
         }
 
         .contact-item img {
-            width: 120px;
-            height: 120px;
+            width: 80px;
+            height: 80px;
             object-fit: contain;
             margin-bottom: 10px;
         }
@@ -85,7 +85,7 @@
             text-decoration: none;
             color: #fff;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1rem;
             display: block;
             margin-top: 10px;
         }
@@ -106,64 +106,37 @@
             padding: 15px;
             background-color: #000;
             color: #fff;
+            font-size: 14px;
         }
 
-        /* Android-Specific Styles */
-        .android .contact-grid {
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-        }
+        @media (max-width: 600px) {
+            .contact-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 15px;
+            }
 
-        .android .contact-item {
-            padding: 15px;
-            font-size: 16px;
-        }
+            .contact-item {
+                padding: 10px;
+                font-size: 14px;
+            }
 
-        .android .contact-item img {
-            width: 80px;
-            height: 80px;
-        }
+            .contact-item img {
+                width: 60px;
+                height: 60px;
+            }
 
-        .android .contact-item a {
-            font-size: 1rem;
-        }
+            .contact-item a {
+                font-size: 0.9rem;
+            }
 
-        .android header h1 {
-            font-size: 24px;
-        }
+            header h1 {
+                font-size: 20px;
+            }
 
-        .android nav a {
-            font-size: 1rem;
-            margin: 0 10px;
-        }
-
-        /* Windows-Specific Styles */
-        .windows .contact-grid {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-        }
-
-        .windows .contact-item {
-            padding: 25px;
-            font-size: 20px;
-        }
-
-        .windows .contact-item img {
-            width: 150px;
-            height: 150px;
-        }
-
-        .windows .contact-item a {
-            font-size: 1.2rem;
-        }
-
-        .windows header h1 {
-            font-size: 28px;
-        }
-
-        .windows nav a {
-            font-size: 1.2rem;
-            margin: 0 20px;
+            nav a {
+                font-size: 0.9rem;
+                margin: 0 5px;
+            }
         }
     </style>
 </head>
@@ -271,19 +244,20 @@
         </div>
     </div>
     <script>
-        // Detect the user's device
-        const isAndroid = /Android/i.test(navigator.userAgent);
-        const isWindows = /Windows/i.test(navigator.userAgent);
-
-        // Add a class to the body based on the device
-        if (isAndroid) {
-            document.body.classList.add('android');
-        } else if (isWindows) {
-            document.body.classList.add('windows');
-        }
+        window.watsonAssistantChatOptions = {
+            integrationID: "33e8634c-c6ab-4f20-b1b4-2c8923060449", // The ID of this integration.
+            region: "au-syd", // The region your integration is hosted in.
+            serviceInstanceID: "9956602b-0c5c-4cba-8771-3088b454c8cb", // The ID of your service instance.
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+            const t=document.createElement('script');
+            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
     </script>
     <footer>
         <p>&copy; 2025 Achhuta Nand Jha. All rights reserved.</p>
     </footer>
 </body>
-</html>
+</html> -->
